@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events | Saint-Gratien</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <a href="./index.html" class="logo"><!--- Mettre le logo de la ville -->
+        Saint Gratien </a>
+      <nav class="menu" aria-label="Navigation principale">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./sights.html">Sights</a></li>
+          <li><a href="./event.html" aria-current="page">Events</a></li>
+          <li><a href="./histoire.html">History</a></li>
+          <li><a href="./localLife.html">Local Life</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="Columns-Events">
+
+        <section class="Event-List">
+          <h2>Events</h2>
+          <p>
+            The main events featured on the home page. Click a date on the
+            calendar to jump straight to it.
+          </p>
+
+          <article class="event-card" id="event-5">
+            <time datetime="2026-12-05">Fri 5 Dec</time>
+            <div>
+              <h3>Christmas Market</h3>
+              <p class="event-place">Town Centre, until 24 Dec</p>
+              <p>
+                Discover exotic food, drinks, and gifts at the annual
+                Christmas Market in Saint-Gratien.
+              </p>
+            </div>
+          </article>
+
+          <article class="event-card" id="event-8">
+            <time datetime="2026-12-08">Tue 8 Dec</time>
+            <div>
+              <h3>Concert</h3>
+              <p class="event-place">Saint-Gratien conservatory</p>
+              <p>
+                Come listen to the Jazz concert at the Saint-Gratien
+                conservatory.
+                This concert is brought to you by the Saint-Gratien music
+                association and is free for all.
+              </p>
+            </div>
+          </article>
+
+          <article class="event-card" id="event-9">
+            <time datetime="2026-12-09">Tue 9 Dec</time>
+            <div>
+              <h3>Music Lesson</h3>
+              <p class="event-place">Saint-Gratien conservatory</p>
+              <p>
+                Following the Jazz concert, students of the Saint-Gratien
+                conservatory will give a music lesson to the public. Come and
+                learn about music and instruments with our talented students.
+                Then entry is 40€ for the lesson and the capacity is limited to 10 people.
+              </p>
+            </div>
+          </article>
+
+          <article class="event-card" id="event-10">
+            <time datetime="2026-12-10">Thu 10 Dec</time>
+            <div>
+              <h3>Volleyball Tournament</h3>
+              <p class="event-place">City Hall</p>
+              <p>
+                Come and watch the Saint-Gratien volleyball team compete in the
+                final against the Enghien-Les-Bains team in the regional
+                tournament.
+              </p>
+            </div>
+          </article>
+
+          <article class="event-card" id="event-18">
+            <time datetime="2026-12-18">Thu 18 Dec</time>
+            <div>
+              <h3>Figaro's Wedding</h3>
+              <p class="event-place">Theatre of Saint-Gratien</p>
+              <p>
+                Assist to the theatre piece "Figaro's Wedding" at the Theatre of Saint-Gratien.
+                This is a classic comedy by Pierre Beaumarchais, performed by the local theatre company.
+                Come and enjoy this delightful performance!
+              </p>
+            </div>
+          </article>
+
+          <article class="event-card" id="event-31">
+            <time datetime="2026-12-31">Thu 31 Dec</time>
+            <div>
+              <h3>New Year's Eve</h3>
+              <p class="event-place">City Hall</p>
+              <p>
+                Celebrate New Year's Eve with food, drinks, music, and
+                fireworks lighting up the sky.
+              </p>
+            </div>
+          </article>
+
+        </section>
+
+        <!-- Colonne latérale : mini-calendrier -->
+        <aside class="calendar-mini" aria-labelledby="calendar-title">
+          <h2 id="calendar-title">December 2026</h2>
+
+          <div class="calendar-weekdays">
+            <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span>
+            <span>Fri</span><span>Sat</span><span>Sun</span>
+          </div>
+
+          <ol class="calendar-grid">
+            <li class="empty"></li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li class="has-event"><a href="#event-5">5</a></li>
+            <li>6</li>
+            <li>7</li>
+            <li class="has-event"><a href="#event-9">8</a></li>
+            <li class="has-event"><a href="#event-9">9</a></li>
+            <li class="has-event"><a href="#event-10">10</a></li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li class="has-event"><a href="#event-18">18</a></li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li class="has-event"><a href="#event-31">31</a></li>
+          </ol>
+
+          <p class="calendar-legend">
+            <span class="dot"></span> Day with an event
+          </p>
+        </aside>
+
+      </section>
+    </main>
+
+    <!-- Footer-->
+    <footer class="site-footer">
+      <section>
+        <h2>Contact</h2>
+        <p>For any inquiries, please call the town hall at 01 23 45 67 89.</p>
+        <address>
+          <p>Place de la mairie</p>
+          <p>95210 Saint-Gratien, France</p>
+        </address>
+        <p>Monday – Friday : 8 h 30 – 17 h 30<br>Saturday : 9 h – 12 h</p>
+      </section>
+      <section>
+        <nav aria-label="Quick Links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="sights.html">To See</a></li>
+            <li><a href="histoire.html">History</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="localLife.html">Local Life</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <h2>About</h2>
+        <p>This website is a university project thus any events or phone number
+          mentionned are fake.</p>
+      </section>
+    </footer>
+
+  </body>
+</html>

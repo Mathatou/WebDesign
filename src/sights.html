@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Le debut</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <a href="./index.html" class="logo"><!--- Mettre le logo de la ville -->
+        Saint Gratien </a>
+      <nav class="menu" aria-label="Navigation principale">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./sights.html" aria-current="page">Sights</a></li>
+          <li><a href="./event.html">Events</a></li>
+          <li><a href="./histoire.html">History</a></li>
+          <li><a href="./localLife.html">Local Life</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="Columns-Sights">
+        <section class="galerie">
+          <h2>To See</h2>
+          <p>
+            Those places are must see if you come to Saint Gratien !
+          </p>
+          
+          <div class="card-grid2">
+            
+            <article class="card">
+              <figure>
+                <img src="./../img/eglise.jpg" alt="Eglise Saint Gratien">
+              </figure>
+              <h3>Eglise Saint Gratien</h3>
+              <dialog id="dialog-Sight1">
+                <h4>Eglise Saint Gratien</h4>
+                <p>
+                  The current church replaces a 13th-century building, enlarged
+                  in the 15th century, which was threatening to collapse.
+                  It was built thanks to the generosity of Princess Mathilde,
+                  based on designs by architect Léon Ohnet, and
+                  consecrated in the presence of the princess herself. It is a
+                  neo-Gothic church with a porch-bell tower topped with
+                  a slate spire. One of its two small chapels houses the
+                  sarcophagus of Marshal de Catinat and that of his
+                  great-niece, Marie-Renée de Lamoignon. A stained glass window
+                  depicts Saint Mathilde with the features of the
+                  princess herself — a fine example of architectural tribute.
+                  Catinat's tomb is listed as a historic monument.
+                </p>
+                <button id="close-dialog">Close</button>
+              </dialog>
+              <p>
+                Church built in 1860.<br>Place de la mairie, 95210
+                Saint-Gratien, France
+              </p>
+              <button id="open-dialog-Sight1" class="card-trigger">More
+                Info</button>
+            </article>
+
+            <article class="card">
+              <figure>
+                <img src="./../img/CatinatCastle.jpg" alt="Catinat's Castle">
+              </figure>
+              <h3>Catinat's Castle</h3>
+              <dialog id="dialog-Sight2">
+                <h4>Catinat's Castle</h4>
+                <p>
+                  Built in 1610 by the great-grandfather of Marshal de Catinat,
+                  the castle was inhabited by him from 1702 to 1712,
+                  years during which he received many figures from the court of
+                  Louis XIV. It was purchased by Princess Mathilde in
+                  1857, who turned it into a guest house integrated into her
+                  estate. Today, it belongs to the town and houses
+                  the services of the Department of Social Action, as well as an
+                  exhibition room on the first floor. Its facades and roofs
+                  have been listed as historic monuments since 1965. It is
+                  located at 14-18 avenue Gabriel Péri.<br><br>
+                  Note: This is not a castle that is "visited" like a museum (it
+                  houses municipal services),
+                  but its architecture and exhibition room make it a place worth
+                  seeing from the outside, with possible access to
+                  the exhibition depending on town hall opening hours.
+                </p>
+
+                <button id="close-dialog">Close</button>
+              </dialog>
+              <p>
+                Castle built in the 16th century.<br>1 Av. Gabriel Péri, 95210 Saint-Gratien, France
+              </p>
+              <button id="open-dialog-Sight2" class="card-trigger">More
+                Info</button>
+            </article>
+
+            <article class="card">
+              <figure>
+                <img src="./../img/mathildeCastle.jpg"
+                  alt="Princess Mathilde's Castle"
+                  class="card-MathildeCastle">
+              </figure>
+              <h3>Princess Mathilde's Castle</h3>
+              <dialog id="dialog-Sight3">
+                <h4>Princess Mathilde's Castle</h4>
+                <p>
+                  Historical sources confirm the existence of the castle,
+                  acquired by the princess in 1851, where she hosted her famous
+                  literary salon. However, no reliable and current information
+                  is available about its current state or any possible
+                  public access to the park — a period source even places it in
+                  "Enghien-les-Bains", which shows that the exact
+                  geographic location can be confusing depending on the
+                  documents. We recommend you verify this point directly
+                  with the town hall of Saint-Gratien before stating it on your
+                  page, or remain intentionally vague
+                  ("Princess Mathilde's historic estate, today disappeared or transformed")
+                  rather than inventing a current state.
+                </p>
+                <button id="close-dialog">Close</button>
+              </dialog>
+              <p>
+                Castle built in the 16th century.<br>16 Av. Gabriel Péri, 95210 Saint-Gratien, France
+                Saint-Gratien, France
+              </p>
+              <button id="open-dialog-Sight3" class="card-trigger">More
+                Info</button>
+            </article>
+
+            <article class="card">
+              <figure>
+                <img src="./../img/CasinoCool.jpg"
+                  alt="Enghien-les-Bains Casino" class="card-Casino">
+              </figure>
+              <h3>Enghien-les-Bains Casino</h3>
+              <dialog id="dialog-Sight4">
+                <h4>Enghien-les-Bains Casino</h4>
+                <p>Enghien-les-Bains Barrière Casino
+                  Just a short distance from Saint-Gratien, on the shores of Lake
+                  Enghien, the current casino dates from 1909-1910 and succeeded
+                  several establishments since 1877. Nicknamed the "boat casino"
+                  for its architecture partly built on stilts, it now houses
+                  slot machines, table games, a theater and several restaurants,
+                  and remains one of the must-visit places in the surrounding
+                  area.</p>
+                <button id="close-dialog">Close</button>
+              </dialog>
+              <p>
+                Casino built in 1909-1910.<br>Avenue de Ceinture, 95880
+                Enghien-les-Bains, France
+              </p>
+              <button id="open-dialog-Sight4" class="card-trigger">More
+                Info</button>
+          </article>
+
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="site-footer">
+      <section>
+        <h2>Contact</h2>
+        <p>For any inquiries, please call the town hall at 01 23 45 67
+          89.</p>
+        <address>
+          <p>Place de la mairie</p>
+          <p>95210 Saint-Gratien, France</p>
+        </address>
+        <p>Monday – Friday : 8 h 30 – 17 h 30<br>Saturday : 9 h – 12 h</p>
+      </section>
+      <section>
+        <nav aria-label="Quick Links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="sights.html">To See</a></li>
+            <li><a href="histoire.html">History</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="localLife.html">Local Life</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <h2>About</h2>
+        <p>This website is a university project thus any events or phone
+          number mentionned are fake.</p>
+      </section>
+    </footer>
+    <script src="./sSight.js"></script>
+  </body>
+
+</html>

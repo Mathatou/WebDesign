@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Le debut</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <a href="./index.html" class="logo"><!--- Mettre le logo de la ville -->
+        Saint Gratien </a>
+      <nav class="menu" aria-label="Navigation principale">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./sights.html">Sights</a></li>
+          <li><a href="./event.html">Events</a></li>
+          <li><a href="./histoire.html" aria-current="page">History</a></li>
+          <li><a href="./localLife.html">Local Life</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="Columns-Service">
+
+        <section class="City-Culture">
+          <h2>Saint-Gratien History</h2>
+          <h3>The origin of the name</h3>
+
+          <p>Saint-Gratien owes its name to a young shepherd who was martyred
+            in the 4th century and canonized under the reign of Dagobert I in
+            628.<br>
+            The site of his martyrdom then took the name Saint-Gratien, and
+            the monks of the Saint-Denis abbey built an oratory there in his
+            memory.</p>
+
+          <h3>From a village to a city</h3>
+
+          <p>
+            For centuries, Saint-Gratien remained a modest village north of
+            Paris. A turning point came in the 17th century, when Nicolas de
+            Catinat, later a Marshal of France, became lord of Saint-Gratien
+            and settled in the castle built by his great-grandfather.
+            After his death in 1712, the town later adopted his coat of arms
+            in July 1994, in tribute to this founding figure.<br>
+
+            In the 19th century, Princess Mathilde Bonaparte profoundly
+            transformed village life by establishing her estate and literary
+            salon there, attracting writers and artists. Her generosity also
+            made the construction of the current church possible.<br>
+
+            In 1850, Saint-Gratien gave up part of its territory to create the
+            neighboring town of Enghien-les-Bains, losing the lake that now
+            bears that city's name.
+          </p>
+
+          <h3>From past century to ours</h3>
+          <p>
+            Attached to the Seine-et-Oise department until 1964, the town was
+            integrated into the new Val-d'Oise department during the
+            reorganization of the Paris region. Saint-Gratien gradually became
+            a residential town in the northwestern outskirts of Paris, with
+            dense suburban housing.<br>
+
+            Today, Saint-Gratien has around 20,900 inhabitants. Its residents
+            are the people of Saint-Gratien. A member of the Plaine Vallée
+            urban community, the town continues its urban transformation while
+            preserving traces of its past: the tomb of Marshal de Catinat and
+            Catinat Castle, a municipal property, still bear witness to this
+            history.</p>
+        </section>
+
+        <section class="City-Personalities">
+          <h2>Personalities</h2>
+          <div class="card-grid">
+
+            <article class="card">
+              <figure>
+                <img src="./../img/mathilde.jpg" alt="Princess Mathilde"
+                  class="card-Mathilde">
+              </figure>
+
+              <h3>Princess Mathilde</h3>
+              <dialog id="dialog-Mathilde">
+                <h4>Princess Mathilde (1820-1904)</h4>
+                <p>
+                  Mathilde Bonaparte, better known as Princess Mathilde, was
+                  born in Trieste and was a member of the Bonaparte family,
+                  the daughter of King Jérôme and niece of Napoleon I. <br>
+                  She first rented Catinat Castle, then bought the castle in 1857
+                  and turned it into a guest house, which she incorporated into
+                  her estate. It was also in Saint-Gratien that she acquired
+                  the Château Neuf in 1851, now called Princess Mathilde's
+                  Castle. <br>
+                  She hosted a salon there where she supported writers,
+                  regardless of their political views: Flaubert, Gautier,
+                  Sainte-Beuve, the Goncourts and Taine all gathered there.
+                  Marcel Proust also attended her salon in his youth.<br>
+                  She also funded a religious building: the current church of
+                  Saint-Gratien was built thanks to her generosity. <br>
+                  She died in Paris in 1904 and was buried in Saint-Gratien
+                  church, which she had helped build.
+                </p>
+                <button id="close-dialog">Close</button>
+              </dialog>
+
+              <p>Princess Mathilde was a prominent figure in the 19th century,
+                known for her salon and cultural contributions.</p>
+              <button id="open-dialog-Mathilde" class="card-trigger">Learn More</button>
+
+            </article>
+            <article class="card">
+              <figure>
+                <img src="./../img/NDC.jpg" alt="Nicolas of Catinat"
+                  class="card-Catinat">
+              </figure>
+              <h3>Nicolas de Catinat</h3>
+              <dialog id="dialog-Catinat">
+                <h4>Nicolas de Catinat (1637-1712)</h4>
+                <p>
+                  A soldier born in Paris, he became a brigadier, then a field
+                  marshal in 1680 and a lieutenant general in 1688. He was made
+                  Marshal of France in 1693 and led the French forces during the
+                  victorious siege of Ath in 1697. He held the title of lord of
+                  Saint-Gratien. <br>He lived in Catinat Castle, built in 1610 by
+                  his great-grandfather, from 1702 to 1712, years during which he
+                  welcomed many figures from the court of Louis XIV there. <br>He
+                  died in Saint-Gratien in 1712, where he was buried in the
+                  village church, in a tomb that is still there today and now
+                  protected as a historic monument. <br>A statue was erected in
+                  his honor in Saint-Gratien in 1860, and his bust stands in the
+                  town hall park.
+                </p>
+                <button id="close-dialog">Close</button>
+              </dialog>
+              <p>Nicolas de Catinat was a French military leader and politician,
+                known for his service in the French army and his role in the
+                development of Saint-Gratien.
+              </p>
+              <button id="open-dialog-Catinat" class="card-trigger">Learn More</button>
+            </article>
+          </div>
+        </section>
+
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="site-footer">
+      <section>
+        <h2>Contact</h2>
+        <p>For any inquiries, please call the town hall at 01 23 45 67 89.</p>
+        <address>
+          <p>Place de la mairie</p>
+          <p>95210 Saint-Gratien, France</p>
+        </address>
+        <p>Monday – Friday : 8 h 30 – 17 h 30<br>Saturday : 9 h – 12 h</p>
+      </section>
+      <section>
+        <nav aria-label="Quick Links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="sights.html">To See</a></li>
+            <li><a href="histoire.html">History</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="localLife.html">Local Life</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <h2>About</h2>
+        <p>This website is a university project thus any events or phone number
+          mentionned are fake.</p>
+      </section>
+    </footer>
+    <script src="./sHistory.js"></script>
+  </body>
+</html>
