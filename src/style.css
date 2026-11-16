@@ -407,7 +407,7 @@ dialog::backdrop {
   border-radius: 4px;
   cursor: pointer;
 }
-#close-dialog {
+.close-dialog {
   display: block;
   margin-top: 1rem;
   margin-left: 45%;
@@ -422,7 +422,7 @@ dialog::backdrop {
 }
 /* ---------- Adaptation aux écrans moyens et petits ---------- */
 @media (max-width: 960px) {
-  .Columns { grid-template-columns: 1fr; }
+  .Columns, .Columns-Service, .Columns-Contact, .Columns-Local { grid-template-columns: 1fr; }
   .Event-Column { position: static; }
 }
 
@@ -438,6 +438,7 @@ dialog::backdrop {
   .menu a { padding: 0.25rem 0.55rem; font-size: 0.9rem; }
 
   .mosaique { grid-template-columns: repeat(2, 1fr); }
+  .card-grid2 { grid-template-columns: 1fr; }
   .site-footer { grid-template-columns: 1fr; }
 }
 

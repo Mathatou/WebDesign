@@ -4,28 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Le debut</title>
+    <title>Local Life | Saint-Gratien</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
 
   <body>
     <!-- Header -->
     <header class ="site-header">
-      <a href="./index.html" class="logo"><!--- Mettre le logo de la ville --> Saint Gratien </a>
-      <nav class ="menu" aria-label="Navigation principale">
+      <a href="./index.html" class="logo"> Saint Gratien </a>
+      <nav class ="menu" aria-label="Main navigation">
         <ul>
           <li><a href="./index.html" >Home</a></li>
           <li><a href="./sights.html">Sights</a></li>
           <li><a href="./event.html">Events</a></li>
           <li><a href="./histoire.html">History</a></li>
-          <li><a href="./localLife.html"aria-current="page">Local Life</a></li>
+          <li><a href="./localLife.html" aria-current="page">Local Life</a></li>
           <li><a href="./services.html">Services</a></li>
           <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <div class="Columns">
+        <div class="main-Column">
+
+          <section class="Local-Intro">
+            <h2>Living in Saint-Gratien</h2>
+            <p>
+              Saint-Gratien is a quiet residential town with a lot of nature:
+              34 hectares of green spaces and 13 parks and gardens.
+              Shops, schools, parks and the train station are all close to each other.
+              This page gathers useful information for the people who live here.
+            </p>
+          </section>
+
+          <section class="Local-Places">
+            <h2>Everyday places</h2>
+            <div class="card-grid">
+              <article class="card">
+                <figure>
+                  <img src="./../img/barrachin.jpg" alt="Barrachin park">
+                </figure>
+                <h3>Barrachin park</h3>
+                <p>About 1 hectare between avenue Terré and rue Danielle Casanova, with a playground, a track to learn cycling and free fitness equipment.</p>
+              </article>
+              <article class="card">
+                <figure>
+                  <img src="./../img/forum.jpg" alt="The Forum of Saint-Gratien">
+                </figure>
+                <h3>The Forum</h3>
+                <p>Around place François Truffaut, with the cinema Les Toiles (3 screens, renovated in 2017).</p>
+              </article>
+              <article class="card">
+                <figure>
+                  <img src="./../img/JJ.jpg" alt="Jean Jaurès school">
+                </figure>
+                <h3>Jean Jaurès school</h3>
+                <p>One of the schools of the town, close to the city centre.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="Local-Parks">
+            <h2>Parks and gardens</h2>
+            <p>
+              Besides Barrachin park, you can walk on the <i>Balade suspendue</i>
+              (3.5 hectares above the boulevard du Parisis, with a fitness trail of 9 stations),
+              relax at the <i>Jardin du Petit Lac</i> or meet friends at the
+              <i>Jardin Léon Fontaine</i>, which has a skatepark and a pétanque area.
+            </p>
+            <p>
+              Parks are open from 9 h to 22 h from April to September,
+              and from 9 h to 18 h from October to March.
+            </p>
+          </section>
+
+          <section class="Local-Market">
+            <h2>Market and associations</h2>
+            <h3>The market</h3>
+            <p>
+              The town market takes place on Wednesday and Sunday mornings,
+              place Roger Salengro. You can find fruit, vegetables, meat and fish.
+            </p>
+            <h3>Associations</h3>
+            <p>
+              About 80 associations are active in Saint-Gratien: sport, culture,
+              solidarity... Every year at the beginning of September, the
+              <i>Journée des associations</i> on place François Truffaut lets
+              residents discover them and sign up.
+            </p>
+            <h3>Libraries</h3>
+            <p>
+              The town has two libraries: the Théodore Monod library
+              (3 allée Lino Ventura) and the smaller Motordu library
+              (33 rue des Raguenets). Together they offer more than 51,000 books,
+              11,000 CDs and 7,500 DVDs.
+            </p>
+          </section>
+
+        </div>
+
+        <aside class="Event-Column" aria-labelledby="titre-local">
+          <h2 id="titre-local">Useful for locals</h2>
+          <ul>
+            <li>
+              <div>
+                <h3>Household waste</h3>
+                <p>Houses: put the bin out on Tuesday evening.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Recycling</h3>
+                <p>Yellow bin: every Thursday morning.<br>Glass: 4th Monday of the month.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Bulky items</h3>
+                <p>4th Wednesday of the month, maximum 2 m³ per household.</p>
+              </div>
+            </li>
+          </ul>
+          <a class="next-button" href="contact.html">Contact the town hall</a>
+        </aside>
+      </div>
+    </main>
     <!-- Footer-->
     <footer class="site-footer">
       <section>

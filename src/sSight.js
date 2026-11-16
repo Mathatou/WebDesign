@@ -14,7 +14,7 @@ const dialogSight4 = document.getElementById('dialog-Sight4');
 
 const openDialogSight4Button = document.getElementById('open-dialog-Sight4');
 
-const closeDialogButtons = document.querySelectorAll('#close-dialog');
+const closeDialogButtons = document.querySelectorAll('.close-dialog');
 
 openDialogSight1Button.addEventListener('click', () => {
   dialogSight1.showModal();

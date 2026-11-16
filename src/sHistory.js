@@ -5,7 +5,7 @@ const dialogCatinat = document.getElementById('dialog-Catinat');
 const openDialogMathildeButton = document.getElementById('open-dialog-Mathilde');
 const openDialogCatinatButton = document.getElementById('open-dialog-Catinat');
 
-const closeDialogButtons = document.querySelectorAll('#close-dialog');
+const closeDialogButtons = document.querySelectorAll('.close-dialog');
 
 openDialogMathildeButton.addEventListener('click', () => {
   dialogMathild.showModal();
