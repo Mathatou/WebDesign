@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sights | Saint-Gratien</title>
+    <title>Le debut</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
 
   <body>
     <!-- Header -->
     <header class="site-header">
-      <a href="./index.html" class="logo">
+      <a href="./index.html" class="logo"><!--- Mettre le logo de la ville -->
         Saint Gratien </a>
-      <nav class="menu" aria-label="Main navigation">
+      <nav class="menu" aria-label="Navigation principale">
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./sights.html" aria-current="page">Sights</a></li>
@@ -56,7 +57,7 @@
                   princess herself — a fine example of architectural tribute.
                   Catinat's tomb is listed as a historic monument.
                 </p>
-                <button class="close-dialog">Close</button>
+                <button id="close-dialog">Close</button>
               </dialog>
               <p>
                 Church built in 1860.<br>Place de la mairie, 95210
@@ -91,10 +92,10 @@
                   the exhibition depending on town hall opening hours.
                 </p>
 
-                <button class="close-dialog">Close</button>
+                <button id="close-dialog">Close</button>
               </dialog>
               <p>
-                Castle built in 1610.<br>14-18 Av. Gabriel Péri, 95210 Saint-Gratien, France
+                Castle built in the 16th century.<br>1 Av. Gabriel Péri, 95210 Saint-Gratien, France
               </p>
               <button id="open-dialog-Sight2" class="card-trigger">More
                 Info</button>
@@ -110,17 +111,24 @@
               <dialog id="dialog-Sight3">
                 <h4>Princess Mathilde's Castle</h4>
                 <p>
-                  Princess Mathilde bought this castle, then called the Château Neuf,
-                  in 1851. She spent her summers there and welcomed the writers
-                  and artists who were the friends of her famous salon.
-                  The castle is part of the long history that links
-                  Saint-Gratien to the princess, who also paid for the
-                  construction of the town church.
+                  Historical sources confirm the existence of the castle,
+                  acquired by the princess in 1851, where she hosted her famous
+                  literary salon. However, no reliable and current information
+                  is available about its current state or any possible
+                  public access to the park — a period source even places it in
+                  "Enghien-les-Bains", which shows that the exact
+                  geographic location can be confusing depending on the
+                  documents. We recommend you verify this point directly
+                  with the town hall of Saint-Gratien before stating it on your
+                  page, or remain intentionally vague
+                  ("Princess Mathilde's historic estate, today disappeared or transformed")
+                  rather than inventing a current state.
                 </p>
-                <button class="close-dialog">Close</button>
+                <button id="close-dialog">Close</button>
               </dialog>
               <p>
-                Bought by the princess in 1851.<br>Saint-Gratien, France
+                Castle built in the 16th century.<br>16 Av. Gabriel Péri, 95210 Saint-Gratien, France
+                Saint-Gratien, France
               </p>
               <button id="open-dialog-Sight3" class="card-trigger">More
                 Info</button>
@@ -142,7 +150,7 @@
                   slot machines, table games, a theater and several restaurants,
                   and remains one of the must-visit places in the surrounding
                   area.</p>
-                <button class="close-dialog">Close</button>
+                <button id="close-dialog">Close</button>
               </dialog>
               <p>
                 Casino built in 1909-1910.<br>Avenue de Ceinture, 95880
@@ -150,10 +158,9 @@
               </p>
               <button id="open-dialog-Sight4" class="card-trigger">More
                 Info</button>
-            </article>
+          </article>
 
-          </div>
-        </section>
+        </div>
       </section>
     </main>
     <!-- Footer-->

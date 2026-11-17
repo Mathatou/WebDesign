@@ -154,10 +154,33 @@ a:focus-visible {
   align-items: start;
 }
 
-.Contact-Form label, .Contact-Form input, .Contact-Form textarea {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
+.Contact-Form label, .Contact-Form input, .Contact-Form textarea .Contact-Form input,
+.Contact-Form textarea,.Contact-Form form {
+  margin-top: 1.5rem; 
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid #c5d2c9;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.Contact-Form input:focus,
+.Contact-Form textarea:focus .Contact-Form input[type="submit"] {
+  width: auto;
+  padding: 0.75rem 2rem;
+  background: var(--prune);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.Contact-Form input[type="submit"]:hover {
+  background: #5f2237;
 }
 .main-Column > section + section { margin-top: 3.5rem; }
 .presentation p { max-width: 65ch; }
@@ -263,7 +286,6 @@ a:focus-visible {
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 1.5rem;
 }
-
 .card-grid2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -274,23 +296,69 @@ a:focus-visible {
   border: #5f2237 solid 2px;
 }
 
+
+.card {
+  background: #fff;
+  border: 1px solid #d5ded8;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(31, 59, 50, 0.12);
+  border-color: var(--prune);
+}
+
 .card a {
   display: block;
   height: 100%;
   color: inherit;
   text-decoration: none;
-  background: #fff;
-  border: 1px solid #d5ded8;
-  border-radius: 6px;
-  overflow: hidden;
 }
+
 .card figure { height: 300px; background: var(--vert-clair); }
 .card img { width: 100%; height: 100%; object-fit: cover; }
 .card h3, .card p { padding: 0 1rem; }
 .card h3 { margin-top: 0.9rem; }
 .card p { margin: 0.3rem 0 1rem; color: var(--pierre); font-size: 0.95rem; }
-.card a:hover h3 { color: var(--prune); }
+.card a:hover h3, .card:hover h3 { color: var(--prune); }
 .card a:focus-visible { outline-offset: 2px; }
+
+
+.card-trigger {
+  display: block;
+  width: calc(100% - 2rem);
+  margin: 0 1rem 1.2rem 1rem !important;
+  padding: 0.65rem 1rem;
+  background: var(--prune);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.card-trigger:hover {
+  background: #5f2237;
+}
+
+
+.Town-Hall .card {
+  padding: 1.5rem;
+}
+.Town-Hall address {
+  font-style: normal;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e8eee9;
+  color: var(--vert-fonce);
+  font-weight: 500;
+}
 
 .card img.card-Mathilde {
   object-position: center 25%;
@@ -335,7 +403,23 @@ a:focus-visible {
 .Event-Column h3 { font-size: 1rem; }
 .Event-Column p { font-size: 0.9rem; color: var(--pierre); }
 
-.next-button { display: inline-block; margin-top: 0.6rem; font-weight: 600; }
+.next-button {
+  display: block;
+  text-align: center;
+  margin-top: 1.2rem;
+  padding: 0.6rem 1rem;
+  border: 2px solid var(--prune);
+  color: var(--prune);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.next-button:hover {
+  background: var(--prune);
+  color: #fff;
+}
 
 /* ---------- Galerie en mosaïque ---------- */
 .mosaique {
@@ -390,39 +474,75 @@ dialog {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
+  width: min(90vw, 550px);
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 2rem;
+  background: #fff;
+  color: var(--texte);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
 }
+
+dialog h4 {
+  font-size: 1.35rem;
+  color: var(--vert-fonce);
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+dialog p {
+  line-height: 1.6;
+  color: var(--texte);
+}
+
 dialog::backdrop {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(15, 30, 25, 0.65);
+  backdrop-filter: blur(2px);
 }
+
+
 #open-dialog-Mathilde, #open-dialog-Catinat,
 #open-dialog-Sight1, #open-dialog-Sight2, #open-dialog-Sight3, #open-dialog-Sight4 {
   display: block;
-  margin-top: 1rem;
-  margin-left: 25%;
-  margin-bottom: 1%;
-  padding: 0.5rem 1rem;
+  width: calc(100% - 2rem);
+  margin: 0.5rem 1rem 1.2rem 1rem;
+  padding: 0.65rem 1rem;
   background: var(--prune);
   color: #fff;
   border: none;
   border-radius: 4px;
+  font-weight: 600;
   cursor: pointer;
+  transition: background 0.2s ease;
 }
-.close-dialog {
+
+#open-dialog-Mathilde:hover, #open-dialog-Catinat:hover,
+#open-dialog-Sight1:hover, #open-dialog-Sight2:hover, #open-dialog-Sight3:hover, #open-dialog-Sight4:hover {
+  background: #5f2237;
+}
+
+
+#close-dialog {
   display: block;
-  margin-top: 1rem;
-  margin-left: 45%;
-  margin-bottom: 1%;
-  padding: 0.5rem 1rem;
+  margin: 1.5rem auto 0 auto;
+  padding: 0.6rem 1.8rem;
   background: var(--prune);
   color: #fff;
   border: none;
   border-radius: 4px;
+  font-weight: 600;
   cursor: pointer;
-  position: relative;
+  transition: background 0.2s ease;
+}
+
+#close-dialog:hover {
+  background: #5f2237;
 }
 /* ---------- Adaptation aux écrans moyens et petits ---------- */
 @media (max-width: 960px) {
-  .Columns, .Columns-Service, .Columns-Contact, .Columns-Local { grid-template-columns: 1fr; }
+  .Columns { grid-template-columns: 1fr; }
   .Event-Column { position: static; }
 }
 
@@ -437,8 +557,15 @@ dialog::backdrop {
   .menu ul { flex-wrap: wrap; justify-content: center; }
   .menu a { padding: 0.25rem 0.55rem; font-size: 0.9rem; }
 
-  .mosaique { grid-template-columns: repeat(2, 1fr); }
-  .card-grid2 { grid-template-columns: 1fr; }
-  .site-footer { grid-template-columns: 1fr; }
+  .mosaique .grande,
+  .mosaique .PlusGrande {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .site-footer .card-grid2,
+  .Columns-Contact,
+  .Columns-Service {
+    grid-template-columns: 1fr;
+  }
 }
 
