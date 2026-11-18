@@ -10,9 +10,12 @@
 
   <body>
     <!-- Header -->
-    <header class ="site-header">
-      <a href="./index.html" class="logo"> Saint Gratien </a>
-      <nav class ="menu" aria-label="Main navigation">
+    <header class="site-header">
+      <a href="./index.html" class="logo">Saint Gratien</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open the menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="menu" id="main-menu" aria-label="Main navigation">
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./sights.html">Sights</a></li>
@@ -26,9 +29,9 @@
     </header>
 
     <main>
-      <section class="Columns-Service">
+      <section class="layout layout--halves">
         
-        <section class="Food">
+        <section class="food">
           <h2>Food & Dining</h2>
           <div class="card-grid">
 
@@ -50,7 +53,7 @@
           </div>
         </section>
 
-        <section class="Accommodation">
+        <section class="accommodation">
           <h2>Accommodation</h2>
           <div class="card-grid">
 
@@ -71,19 +74,22 @@
           </div>
         </section>
 
-        <section class="MoveAround">
+        <section class="move-around">
           <h2>Move Around</h2>
           <ul>
-            <li><i>RER C line</i><br>
-            This line will take you to Paris in 15 minutes. The station is located in the city center of Saint-Gratien.<br>
-            It can also take you to Versailles Castle in 45 minutes.<br>
-            <figure><img src="./../img/RERC.png" alt="RER C"></figure>
+            <li>
+              <h3>RER C line</h3>
+              <p>
+                This line will take you to Paris in 15 minutes. The station is located in the city center of Saint-Gratien.
+                It can also take you to Versailles Castle in 45 minutes.
+              </p>
+              <figure><img src="./../img/RERC.png" alt="Map of the RER C line"></figure>
             </li>
             <li>
-              <i>Bus line :</i> 
-              <ul>
-                <li>&nbsp; Bus 138 : From Ermont-Eaubonne passing by Saint-Gratien to Saint-Ouen near Paris</li>
-                <li>&nbsp; Bus 1516 : From Argenteuil passing by Saint-Gratien to Enghien-les-Bains</li>
+              <h3>Bus lines</h3>
+              <ul class="bus-lines">
+                <li><strong>Bus 138:</strong> from Ermont-Eaubonne through Saint-Gratien to Saint-Ouen, near Paris</li>
+                <li><strong>Bus 1516:</strong> from Argenteuil through Saint-Gratien to Enghien-les-Bains</li>
               </ul>
               <p>
                 These bus lines are optimal for moving around the different cities in the area.
@@ -93,28 +99,28 @@
           </ul>
         </section>
 
-        <section class="LifeStyle">
+        <section class="life-style">
           <h2>Life Style</h2>
           <h3>Schooling</h3>
           <p>
-            Saint-Gratien has a variety of educational institutions, including primary schools and secondary schools.<br>
-            The nearest high school is located in Enghien-les-Bains, which is easily accessible by public transportation.<br> 
+            Saint-Gratien has a variety of educational institutions, including primary schools and secondary schools.
+            The nearest high school is located in Enghien-les-Bains, which is easily accessible by public transportation.
           </p>
           <h3>Healthcare</h3>
           <p>
-            Saint-Gratien has several healthcare facilities, including medical analysis laboratories and pharmacies.<br>
-            The nearest hospital is located in Ermont, which is easily accessible by public transportation.<br>
+            Saint-Gratien has several healthcare facilities, including medical analysis laboratories and pharmacies.
+            The nearest hospital is located in Ermont, which is easily accessible by public transportation.
           </p>
           <h3>Sports</h3>
           <p>
-            Saint-Gratien has several sports facilities, including gyms and recreational areas.<br>
-            The nearest sports center is located in the center of the city.<br>
-            Just 15 minutes away from the city center, you can find an archery club, a tennis club, and a swimming pool.<br>
+            Saint-Gratien has several sports facilities, including gyms and recreational areas.
+            The nearest sports center is located in the center of the city.
+            Just 15 minutes away from the city center, you can find an archery club, a tennis club, and a swimming pool.
           </p>
           <h3>Culture</h3>
           <p>
-            There is a cultural center in Saint-Gratien that hosts various events and exhibitions throughout the year.<br>
-            The conservatory of music is also located in the city center, offering music lessons and performances.<br>
+            There is a cultural center in Saint-Gratien that hosts various events and exhibitions throughout the year.
+            The conservatory of music is also located in the city center, offering music lessons and performances.
           </p>
         </section>
 
@@ -126,30 +132,31 @@
         <h2>Contact</h2>
         <p>For any inquiries, please call the town hall at 01 23 45 67 89.</p>
         <address>
-          <p>Place de la mairie</p>
+          <p>1 Place Gambetta</p>
           <p>95210 Saint-Gratien, France</p>
         </address>
         <p>Monday – Friday : 8 h 30 – 17 h 30<br>Saturday : 9 h – 12 h</p>
       </section>
       <section>
-        <nav aria-label="Quick Links">
+        <nav aria-label="Quick links">
           <h2>Quick Links</h2>
           <ul>
-            <li><a href="event.html">Events</a></li>
-            <li><a href="sights.html">To See</a></li>
-            <li><a href="histoire.html">History</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="localLife.html">Local Life</a></li>
+            <li><a href="./event.html">Events</a></li>
+            <li><a href="./sights.html">Sights</a></li>
+            <li><a href="./histoire.html">History</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./localLife.html">Local Life</a></li>
           </ul>
         </nav>
       </section>
       <section>
         <h2>About</h2>
-        <p>This website is a university project thus any events or phone number mentionned are fake.</p>
+        <p>This website is a university project, so all events and phone numbers
+          mentioned are fictional.</p>
       </section>
     </footer>
-
+    <script src="./main.js"></script>
   </body>
 </html>
 

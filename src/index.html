@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Saint-Gratien - info</title>
+    <title>Home | Saint-Gratien</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
 
   <body>
     <!-- Header -->
-    <header class ="site-header">
-      <a href="./index.html" class="logo"><!--- Mettre le logo de la ville --> Saint Gratien </a>
-      <nav class ="menu" aria-label="Navigation principale">
+    <header class="site-header">
+      <a href="./index.html" class="logo">Saint Gratien</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open the menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="menu" id="main-menu" aria-label="Main navigation">
         <ul>
           <li><a href="./index.html" aria-current="page">Home</a></li>
           <li><a href="./sights.html">Sights</a></li>
@@ -29,41 +31,41 @@
     <main>
       <!-- Banner -->
       <section class="hero">
-        <img src="./../img/Lac.jpg" alt="Le lac d'Enghien près de Saint-Gratien de nuit">
-        <div class="hero-texte">
+        <img src="./../img/Lac.jpg" alt="Lake Enghien next to Saint-Gratien at night">
+        <div class="hero-text">
           <h1>Welcome to Saint-Gratien !</h1>
           <p>A beautiful town in France near Paris neighbour to Enghien-Les-Bains.</p>
-          <a class="bouton" href="sights.html">Explore the city</a>
+          <a class="button" href="sights.html">Explore the city</a>
         </div>
       </section>
 
       <!-- Main Content -->
       
-      <div class="Columns">
-        <div class="main-Column">
+      <div class="layout layout--sidebar">
+        <div class="main-column">
 
-          <section class="presentation">
-            <h2>Sights Saint-Gratien</h2>
+          <section class="about">
+            <h2>About Saint-Gratien</h2>
             <p>
-              This website is dedicated to providing information about the town, its history, culture, and attractions.<br>
-              Saint-Gratien is a beautiful town in France near Paris (~15 km) and neighbour to Enghien-Les-Bains.<br>
-              Saint-Gratien is known for its green spaces and the historical significance of Princess Mathilde, who held a famous salon in the 19th century.<br>
+              This website is dedicated to providing information about the town, its history, culture, and attractions.
+              Saint-Gratien is a beautiful town in France near Paris (~15 km) and neighbour to Enghien-Les-Bains.
+              Saint-Gratien is known for its green spaces and the historical significance of Princess Mathilde, who held a famous salon in the 19th century.
             </p>
             <p>
-              This website offers a comprehensive guide to exploring Saint-Gratien, including its history, places to visit, and useful services for residents and visitors alike.<br>
-              Whether you're planning a visit or looking to learn more about the town, we hope you find the information here helpful and engaging.<br>
+              This website offers a comprehensive guide to exploring Saint-Gratien, including its history, places to visit, and useful services for residents and visitors alike.
+              Whether you're planning a visit or looking to learn more about the town, we hope you find the information here helpful and engaging.
               Enjoy your exploration of Saint-Gratien!
             </p>
           </section>
 
-          <section class="rubriques">
+          <section class="explore">
           <h2>Explore Saint-Gratien</h2>
           <div class="card-grid">
 
             <article class="card">
               <a href="histoire.html">
                 <figure>
-                  <img src="./../img/mathilde.jpg" alt="Portrait of the princess Mathilde" class="card-Mathilde">
+                  <img src="./../img/mathilde.jpg" alt="Portrait of the princess Mathilde" class="img-pos-25">
                 </figure>
                 <h3>History</h3>
                 <p>From Maréchal Catinat to the princess Mathilde.</p>
@@ -73,7 +75,7 @@
             <article class="card">
               <a href="sights.html">
                 <figure>
-                  <img src="./../img/eglise.jpg" alt="Saint-Gratien church" class="card-eglise">
+                  <img src="./../img/eglise.jpg" alt="Saint-Gratien church" class="img-pos-75">
                 </figure>
                 <h3>Places to Visit</h3>
                 <p>Church, park, walks by the nearby lake.</p>
@@ -93,7 +95,7 @@
             <article class="card">
               <a href="contact.html">
                 <figure>
-                  <img src="./../img/mairie.jpg" alt="Front of the Town Hall of Saint-Gratien" class="card-mairie">
+                  <img src="./../img/mairie.jpg" alt="Front of the Town Hall of Saint-Gratien" class="img-pos-30">
                 </figure>
                 <h3>Contact</h3>
                 <p>Addresses, hours, and institutions.</p>
@@ -103,10 +105,10 @@
           </div>
         </section>
 
-        <section class="galerie">
+        <section class="gallery">
           <h2>Picture the city</h2>
-          <div class="mosaique">
-            <figure class="grande">
+          <div class="mosaic">
+            <figure class="mosaic-big">
               <img src="../img/casino.jpg" alt="Enghien-les-Bains casino">
               <figcaption>The Enghien-les-Bains casino</figcaption>
             </figure>
@@ -119,7 +121,7 @@
               <figcaption>The forum</figcaption>
             </figure>
             <figure>
-              <img src="../img/catinat.jpg" alt="Bust of Nicolas de Catinat" class="card-catinat">
+              <img src="../img/catinat.jpg" alt="Bust of Nicolas de Catinat" class="img-pos-20">
               <figcaption>Nicolas de Catinat bust</figcaption>
             </figure>
             <figure>
@@ -135,11 +137,11 @@
 
         </div>
 
-        <aside class="Event-Column" aria-labelledby="titre-events">
+        <aside class="side-panel" aria-labelledby="titre-events">
           <h2 id="titre-events">Events</h2>
           <ul>
             <li>
-              <time datetime="2026-12-5">December 5, 2026</time>
+              <time datetime="2026-12-05">December 5, 2026</time>
               <div>
                 <h3>Christmas Market</h3>
                 <p>Until December 24, 2026, discover exotic food, drinks, and gifts at the annual Christmas Market in Saint-Gratien!</p>
@@ -149,7 +151,7 @@
               <time datetime="2026-12-08">December 8, 2026</time>
               <div>
                 <h3>Concert</h3>
-                <p>Join us for a night of music under the stars at the Outdoor Concert in Saint-Gratien in front of the Catinat castle!</p>
+                <p>Come listen to the free Jazz concert at the Saint-Gratien conservatory!</p>
               </div>  
             </li>
             <li>
@@ -160,7 +162,7 @@
               </div>  
             </li>
           </ul>
-          <a class="next-button" href="./event.html">See all events</a>
+          <a class="button-outline" href="./event.html">See all events</a>
         </aside>
       </div>
       
@@ -171,30 +173,30 @@
         <h2>Contact</h2>
         <p>For any inquiries, please call the town hall at 01 23 45 67 89.</p>
         <address>
-          <p>Place de la mairie</p>
+          <p>1 Place Gambetta</p>
           <p>95210 Saint-Gratien, France</p>
         </address>
         <p>Monday – Friday : 8 h 30 – 17 h 30<br>Saturday : 9 h – 12 h</p>
       </section>
       <section>
-        <nav aria-label="Quick Links">
+        <nav aria-label="Quick links">
           <h2>Quick Links</h2>
           <ul>
-            <li><a href="event.html">Events</a></li>
-            <li><a href="sights.html">To See</a></li>
-            <li><a href="histoire.html">History</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="localLife.html">Local Life</a></li>
+            <li><a href="./event.html">Events</a></li>
+            <li><a href="./sights.html">Sights</a></li>
+            <li><a href="./histoire.html">History</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./localLife.html">Local Life</a></li>
           </ul>
         </nav>
       </section>
       <section>
         <h2>About</h2>
-        <p>This website is a university project thus any events or phone number
-          mentionned are fake.</p>
+        <p>This website is a university project, so all events and phone numbers
+          mentioned are fictional.</p>
       </section>
     </footer>
-
+    <script src="./main.js"></script>
   </body>
 </html>

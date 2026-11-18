@@ -10,11 +10,14 @@
 
   <body>
     <!-- Header -->
-    <header class ="site-header">
-      <a href="./index.html" class="logo"> Saint Gratien </a>
-      <nav class ="menu" aria-label="Main navigation">
+    <header class="site-header">
+      <a href="./index.html" class="logo">Saint Gratien</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open the menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="menu" id="main-menu" aria-label="Main navigation">
         <ul>
-          <li><a href="./index.html" >Home</a></li>
+          <li><a href="./index.html">Home</a></li>
           <li><a href="./sights.html">Sights</a></li>
           <li><a href="./event.html">Events</a></li>
           <li><a href="./histoire.html">History</a></li>
@@ -25,10 +28,10 @@
       </nav>
     </header>
     <main>
-      <div class="Columns">
-        <div class="main-Column">
+      <div class="layout layout--sidebar">
+        <div class="main-column">
 
-          <section class="Local-Intro">
+          <section class="local-intro">
             <h2>Living in Saint-Gratien</h2>
             <p>
               Saint-Gratien is a quiet residential town with a lot of nature:
@@ -38,7 +41,7 @@
             </p>
           </section>
 
-          <section class="Local-Places">
+          <section class="local-places">
             <h2>Everyday places</h2>
             <div class="card-grid">
               <article class="card">
@@ -65,7 +68,7 @@
             </div>
           </section>
 
-          <section class="Local-Parks">
+          <section class="local-parks">
             <h2>Parks and gardens</h2>
             <p>
               Besides Barrachin park, you can walk on the <i>Balade suspendue</i>
@@ -79,7 +82,7 @@
             </p>
           </section>
 
-          <section class="Local-Market">
+          <section class="local-market">
             <h2>Market and associations</h2>
             <h3>The market</h3>
             <p>
@@ -104,7 +107,7 @@
 
         </div>
 
-        <aside class="Event-Column" aria-labelledby="titre-local">
+        <aside class="side-panel" aria-labelledby="titre-local">
           <h2 id="titre-local">Useful for locals</h2>
           <ul>
             <li>
@@ -126,7 +129,7 @@
               </div>
             </li>
           </ul>
-          <a class="next-button" href="contact.html">Contact the town hall</a>
+          <a class="button-outline" href="contact.html">Contact the town hall</a>
         </aside>
       </div>
     </main>
@@ -136,29 +139,30 @@
         <h2>Contact</h2>
         <p>For any inquiries, please call the town hall at 01 23 45 67 89.</p>
         <address>
-          <p>Place de la mairie</p>
+          <p>1 Place Gambetta</p>
           <p>95210 Saint-Gratien, France</p>
         </address>
         <p>Monday – Friday : 8 h 30 – 17 h 30<br>Saturday : 9 h – 12 h</p>
       </section>
       <section>
-        <nav aria-label="Quick Links">
+        <nav aria-label="Quick links">
           <h2>Quick Links</h2>
           <ul>
-            <li><a href="event.html">Events</a></li>
-            <li><a href="sights.html">To See</a></li>
-            <li><a href="histoire.html">History</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="localLife.html">Local Life</a></li>
+            <li><a href="./event.html">Events</a></li>
+            <li><a href="./sights.html">Sights</a></li>
+            <li><a href="./histoire.html">History</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./localLife.html">Local Life</a></li>
           </ul>
         </nav>
       </section>
       <section>
         <h2>About</h2>
-        <p>This website is a university project thus any events or phone number mentionned are fake.</p>
+        <p>This website is a university project, so all events and phone numbers
+          mentioned are fictional.</p>
       </section>
     </footer>
-
+    <script src="./main.js"></script>
   </body>
 </html>

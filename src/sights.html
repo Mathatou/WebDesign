@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Le debut</title>
+    <title>Sights | Saint-Gratien</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
 
   <body>
     <!-- Header -->
     <header class="site-header">
-      <a href="./index.html" class="logo"><!--- Mettre le logo de la ville -->
-        Saint Gratien </a>
-      <nav class="menu" aria-label="Navigation principale">
+      <a href="./index.html" class="logo">Saint Gratien</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open the menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="menu" id="main-menu" aria-label="Main navigation">
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./sights.html" aria-current="page">Sights</a></li>
@@ -27,14 +28,14 @@
       </nav>
     </header>
     <main>
-      <section class="Columns-Sights">
-        <section class="galerie">
+      <section class="layout">
+        <section class="gallery">
           <h2>To See</h2>
           <p>
             Those places are must see if you come to Saint Gratien !
           </p>
           
-          <div class="card-grid2">
+          <div class="card-grid-2">
             
             <article class="card">
               <figure>
@@ -57,14 +58,13 @@
                   princess herself — a fine example of architectural tribute.
                   Catinat's tomb is listed as a historic monument.
                 </p>
-                <button id="close-dialog">Close</button>
+                <button class="button close-dialog">Close</button>
               </dialog>
               <p>
                 Church built in 1860.<br>Place de la mairie, 95210
                 Saint-Gratien, France
               </p>
-              <button id="open-dialog-Sight1" class="card-trigger">More
-                Info</button>
+              <button class="button" data-dialog="dialog-Sight1">More Info</button>
             </article>
 
             <article class="card">
@@ -92,52 +92,43 @@
                   the exhibition depending on town hall opening hours.
                 </p>
 
-                <button id="close-dialog">Close</button>
+                <button class="button close-dialog">Close</button>
               </dialog>
               <p>
-                Castle built in the 16th century.<br>1 Av. Gabriel Péri, 95210 Saint-Gratien, France
+                Castle built in 1610.<br>14-18 Av. Gabriel Péri, 95210 Saint-Gratien, France
               </p>
-              <button id="open-dialog-Sight2" class="card-trigger">More
-                Info</button>
+              <button class="button" data-dialog="dialog-Sight2">More Info</button>
             </article>
 
             <article class="card">
               <figure>
                 <img src="./../img/mathildeCastle.jpg"
                   alt="Princess Mathilde's Castle"
-                  class="card-MathildeCastle">
+                  class="img-pos-40">
               </figure>
               <h3>Princess Mathilde's Castle</h3>
               <dialog id="dialog-Sight3">
                 <h4>Princess Mathilde's Castle</h4>
                 <p>
-                  Historical sources confirm the existence of the castle,
-                  acquired by the princess in 1851, where she hosted her famous
-                  literary salon. However, no reliable and current information
-                  is available about its current state or any possible
-                  public access to the park — a period source even places it in
-                  "Enghien-les-Bains", which shows that the exact
-                  geographic location can be confusing depending on the
-                  documents. We recommend you verify this point directly
-                  with the town hall of Saint-Gratien before stating it on your
-                  page, or remain intentionally vague
-                  ("Princess Mathilde's historic estate, today disappeared or transformed")
-                  rather than inventing a current state.
+                  Princess Mathilde bought this castle, then called the Château Neuf,
+                  in 1851. She spent her summers there and welcomed the writers
+                  and artists who were the friends of her famous salon.
+                  The castle is part of the long history that links
+                  Saint-Gratien to the princess, who also paid for the
+                  construction of the town church.
                 </p>
-                <button id="close-dialog">Close</button>
+                <button class="button close-dialog">Close</button>
               </dialog>
               <p>
-                Castle built in the 16th century.<br>16 Av. Gabriel Péri, 95210 Saint-Gratien, France
-                Saint-Gratien, France
+                Bought by the princess in 1851.<br>Saint-Gratien, France
               </p>
-              <button id="open-dialog-Sight3" class="card-trigger">More
-                Info</button>
+              <button class="button" data-dialog="dialog-Sight3">More Info</button>
             </article>
 
             <article class="card">
               <figure>
                 <img src="./../img/CasinoCool.jpg"
-                  alt="Enghien-les-Bains Casino" class="card-Casino">
+                  alt="Enghien-les-Bains Casino">
               </figure>
               <h3>Enghien-les-Bains Casino</h3>
               <dialog id="dialog-Sight4">
@@ -150,51 +141,50 @@
                   slot machines, table games, a theater and several restaurants,
                   and remains one of the must-visit places in the surrounding
                   area.</p>
-                <button id="close-dialog">Close</button>
+                <button class="button close-dialog">Close</button>
               </dialog>
               <p>
                 Casino built in 1909-1910.<br>Avenue de Ceinture, 95880
                 Enghien-les-Bains, France
               </p>
-              <button id="open-dialog-Sight4" class="card-trigger">More
-                Info</button>
-          </article>
+              <button class="button" data-dialog="dialog-Sight4">More Info</button>
+            </article>
 
-        </div>
+          </div>
+        </section>
       </section>
     </main>
     <!-- Footer-->
     <footer class="site-footer">
       <section>
         <h2>Contact</h2>
-        <p>For any inquiries, please call the town hall at 01 23 45 67
-          89.</p>
+        <p>For any inquiries, please call the town hall at 01 23 45 67 89.</p>
         <address>
-          <p>Place de la mairie</p>
+          <p>1 Place Gambetta</p>
           <p>95210 Saint-Gratien, France</p>
         </address>
         <p>Monday – Friday : 8 h 30 – 17 h 30<br>Saturday : 9 h – 12 h</p>
       </section>
       <section>
-        <nav aria-label="Quick Links">
+        <nav aria-label="Quick links">
           <h2>Quick Links</h2>
           <ul>
-            <li><a href="event.html">Events</a></li>
-            <li><a href="sights.html">To See</a></li>
-            <li><a href="histoire.html">History</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="localLife.html">Local Life</a></li>
+            <li><a href="./event.html">Events</a></li>
+            <li><a href="./sights.html">Sights</a></li>
+            <li><a href="./histoire.html">History</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./localLife.html">Local Life</a></li>
           </ul>
         </nav>
       </section>
       <section>
         <h2>About</h2>
-        <p>This website is a university project thus any events or phone
-          number mentionned are fake.</p>
+        <p>This website is a university project, so all events and phone numbers
+          mentioned are fictional.</p>
       </section>
     </footer>
-    <script src="./sSight.js"></script>
+    <script src="./main.js"></script>
   </body>
 
 </html>
